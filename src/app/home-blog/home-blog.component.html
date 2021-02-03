@@ -1,0 +1,31 @@
+<div class="blog-section p-5">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="title text-right">
+                <h3 class="my-4">BLOG</h3>
+                <h2 class="my-4">SKINCARE</h2>
+            </div>
+            <div class="col-sm-3 offset-sm-9 divider-header"></div>
+        </div>
+    </div>
+    <div class="row posts" *ngFor="let post of articles">
+        <div class="col-sm-12 my-4">
+            <div class="col-sm-12 blog-article p-4" >
+                <div class="row px-3">
+                    <div class="col-md-4 col-sm-12 p-0 blog-article__content">
+                        <img src="{{post.image}}" alt="" class="img-fluid w-100">
+                    </div>
+                    <div class="col-md-8 col-sm-12 px-5 blog-article__content">
+                        <div class="metadata mt-3">
+                            <h6><img src="/assets/icons/icon_fecha.png" alt="Fecha publicación"> {{post.date}}</h6>
+                            <h6><img src="/assets/icons/icon_comentarios.png" alt=""> {{post.comments}} comentarios</h6>
+                        </div>
+                        <h2 class="mb-4">{{post.name}}</h2>
+                        <p class="mb-4">{{post.description}}<p>
+                        <a href="{{post.url}}" target="_blank" rel="noopener noreferrer">ver más <span>></span> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

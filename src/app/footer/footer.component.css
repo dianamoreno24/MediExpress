@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.footer {
+    position: static;
+    bottom: 0;
+    background: rgb(25,82,124);
+    background: -moz-linear-gradient(90deg, rgba(25,82,124,1) 0%, rgba(0,137,172,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(25,82,124,1) 0%, rgba(0,137,172,1) 100%);
+    background: linear-gradient(90deg, rgba(25,82,124,1) 0%, rgba(0,137,172,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#19527c",endColorstr="#0089ac",GradientType=1);
+    font-size: 15px;
+}
+
+.divider-personalized {
+    width: 75%;
+    border-bottom: 2px solid  rgba(0,137,172,1);
+}
+
+.footer h3 {
+    font-family: 'Poppins',
+    sans-serif;
+    font-size: 18px;
+    color: #00BCAE;
+}
+
+.footer p {
+    font-family: 'Poppins',
+    sans-serif;
+    margin: 0;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.footer p img {
+    width: 24px;
+    margin-top: -2px;
+}
+
+.social {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.social a {
+    font-family: 'Poppins',
+    sans-serif;
+}
+
+.social a img {
+    width: 35px;
+    margin: 0 10px;
+}
+
+.copyright {
+    background-color: #F2F2F2;
+    color: #222222;
+}

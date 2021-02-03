@@ -1,26 +1,26 @@
 <style> </style>
-<div class="toolbar" role="banner">
+<div class="toolbar" role="banner"></div>
 
 <div class="content" role="main">
-
+  <main>
     <span>{{ title }} app is running!</span>
     <span>{{ nombre }} yei!</span>
 
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <button type="button" class="btn btn-primary">Primary</button>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-primary">Primary</button>
+        </div>
       </div>
     </div>
-  </div>
-  <button mat-button [matMenuTriggerFor]="menu">Menu</button>
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item>Item 1</button>
-    <button mat-menu-item>Item 2</button>
-  </mat-menu>
+    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
 
-
+    <app-home-marcas-slider></app-home-marcas-slider>
+    <app-home-blog></app-home-blog>
+  </main>
+  <app-footer></app-footer>
 </div>
-</div>
-
-

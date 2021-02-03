@@ -1,0 +1,18 @@
+<div class="slider-section my-5 p-5">
+    <div class="row">
+        <div class="col-md-10 col-sm-12 offset-md-1 px-5">
+            <div class="text-center">
+                <h4 class="mb-3">Las mejores marcas del mundo</h4>
+                <h2 class="mb-3">para el cuidado integral de tu piel</h2>
+            </div>
+        </div>
+        <div class="col-sm-12 my-4 divider-large"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 col-sm-12 offset-md-1 mt-5">
+            <carousel [images]="images" [cellsToShow]=4 [loop]=true [autoplay]=true [autoplayInterval]=2000 [dots]=true
+                [objectFit]="cover" [margin]=20 [arrowsOutside]=true [arrowsTheme]="light">
+            </carousel>
+        </div>
+    </div>
+</div>
