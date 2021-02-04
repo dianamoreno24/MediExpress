@@ -1,0 +1,16 @@
+<div class="container-fluid">
+  <div class="row mt-5">
+    <div class="col-12 col-md-3 container shadow">
+      <app-product-filters
+        [brands]="brands"
+        [applicationTimes]="applicationTimes"
+        [maxPrice]="maxPrice"
+        [minPrice]="minPrice"
+        (filterEvent)="filterProducts($event)"
+      ></app-product-filters>
+    </div>
+    <div class="col-12 col-md-9">
+      <app-products-grid [products]="productsFiltered"></app-products-grid>
+    </div>
+  </div>
+</div>

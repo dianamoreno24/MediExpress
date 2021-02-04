@@ -1,0 +1,23 @@
+<div
+  class="card mb-5 shadow-sm rounded-0"
+  style="max-width: 250px; width: 250px"
+>
+  <div class="m-2">
+    <img [src]="product.photoUrl" class="card-img-top rounded-0" alt="..." />
+  </div>
+  <div class="card-body">
+    <h6 class="card-title mb-0">{{ product.name }}</h6>
+    <small>{{ product.qty }} {{ product.measurementUnit }}</small>
+    <h5 class="mt-2">
+      <b>
+        {{ product.price | currency }}
+      </b>
+    </h5>
+    <div class="d-grid gap-2">
+
+      <a href="#" class="btn btn-sm btn-outline-primary fs-6 rounded-0"
+        >Ver Más</a
+      >
+    </div>
+  </div>
+</div>
