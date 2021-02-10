@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.blog-section {
+    background-color: #E6E6E6;
+}
+
+.blog-section .title h2 {
+    color: #19527C;
+    font-family: 'Poppins',
+    sans-serif;
+    font-size: 4em;
+    font-weight: 500;
+}
+
+.blog-section .title h3 {
+    color: #19527C;
+    font-family: 'Poppins',
+    sans-serif;
+    font-size: 4em;
+    font-weight: 300;
+}
+
+.divider-header {
+    border: 2px solid transparent;
+    border-image: url('/assets/img/border.png') 100;
+}
+
+.blog-article {
+    background-color: #fff;
+}
+
+.blog-article__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blog-article h2 {
+    font-family: 'Poppins',
+    sans-serif;
+    font-size: 1.8em;
+    color: #19527C;
+}
+
+.blog-article p {
+    font-family: 'Poppins',
+    sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #000000;
+}
+
+.blog-article a {
+    color: #0089AC;
+    font-family: 'Poppins',
+    sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.blog-article a span {
+    font-family: 'Poppins',
+    sans-serif;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.metadata {
+    display: flex;
+}
+
+.metadata h6 {
+    font-family: 'Poppins',
+    sans-serif;
+    font-size: .8em;
+    color: #0089AC;
+    margin-right: 20px;
+}
+
+.posts:nth-child(odd) .blog-article > div {
+    flex-direction: row-reverse;
+}

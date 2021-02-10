@@ -1,19 +1,11 @@
-:host {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 14px;
-  color: #333;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.nav-pills .nav-link.active {
+  background-color: transparent;
+  color: blue;
+  border-bottom: 2px solid blue;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 8px 0;
+.nav-link {
+  color: #a5a5a5;
+  border-bottom: 2px solid #a5a5a5;
 }
 
 p {
@@ -52,11 +44,11 @@ p {
 
 .content {
   display: flex;
-  margin: 82px auto 32px;
+  /* margin: 82px auto 32px;
   padding: 0 16px;
-  max-width: 960px;
+  max-width: 960px; */
   flex-direction: column;
-  align-items: center;
+/*   align-items: center; */
 }
 
 svg.material-icons {
@@ -256,6 +248,15 @@ svg#clouds {
   width: 1920px;
 }
 
+.content {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
 
 /* Responsive Styles */
 @media screen and (max-width: 767px) {
@@ -286,4 +287,3 @@ svg#clouds {
     visibility: hidden;
   }
 }
-
