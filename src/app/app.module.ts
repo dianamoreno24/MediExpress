@@ -1,5 +1,7 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 
@@ -12,7 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { NgxSliderModule } from '@angular-slider/ngx-slider';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import {FormsModule} from "@angular/forms";
+import {FormsModule} from '@angular/forms';
 
 import {MatMenuModule} from '@angular/material/menu';
 import { HomeBlogComponent } from './home-blog/home-blog.component';
@@ -27,6 +29,9 @@ import { ButtonComponent } from './button/button.component';
 import { ListaColoresComponent } from './lista-colores/lista-colores.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SliderComponent } from './slider/slider.component';
+import { ProductoDetalleComponent } from './producto-detalle/producto-detalle.component';
+import { FormularioAgregarUsuarioComponent } from './formulario-agregar-usuario/formulario-agregar-usuario.component';
+import { ListaUsuariosComponent } from './lista-usuarios/lista-usuarios.component';
 
 @NgModule({
   declarations: [
@@ -42,13 +47,20 @@ import { SliderComponent } from './slider/slider.component';
     ButtonComponent,
     ListaColoresComponent,
     NavbarComponent,
+     SliderComponent,
+    ProductoDetalleComponent,
+    FormularioAgregarUsuarioComponent,
+    ListaUsuariosComponent,
      HomeBlogComponent,
     Home,
     SliderComponent
-
   ],
   imports: [
     BrowserModule,
+    RouterModule.forRoot([
+      {path: 'button', component: ButtonComponent},
+      {path: '', component: SliderComponent},
+    ]),
     BrowserAnimationsModule,
     MatMenuModule,
       NgFallimgModule.forRoot({
