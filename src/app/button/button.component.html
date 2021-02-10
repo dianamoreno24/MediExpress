@@ -1,0 +1,16 @@
+<div class="container py-5">
+  <h6>Este es un componente botón</h6>
+  <div class="row">
+    <div class="col-12" *ngIf="oculto">
+      <h3>{{interpolationTitle}}</h3>
+    </div>
+    <div class="col-12">
+      <h3 [style.color]="propertyBinding">{{propertyBinding}}</h3>
+    </div>
+    <div class="col">
+      <button type="button" class="btn btn-primary" (click)="click($event)">Enviar</button>
+    </div>
+
+  </div>
+
+</div>
