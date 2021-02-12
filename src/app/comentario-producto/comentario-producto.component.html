@@ -1,0 +1,28 @@
+<div class="container mt-5 pt-5">
+  <div class="row">
+    <div class="col-12">
+      <form>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">{{newCalification.title}}</label>
+          <select class="form-control" id="exampleFormControlSelect1" name="exampleFormControlSelect1" [(ngModel)]="newCalification.calificacion">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect2">Tu calificación</label>
+          <input  type="email" class="form-control" id="exampleFormControlSelect2" name="exampleFormControlSelect1" [(ngModel)]="newCalification.calificacion">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Deja tu comentario acerca de este producto</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="button" class="btn btn-primary mt-3" (click)="click($event)">Enviar</button>
+      </form>
+    </div>
+  </div>
+</div>

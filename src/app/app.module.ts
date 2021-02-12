@@ -4,6 +4,8 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 
+
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { ProductFiltersComponent } from './components/product-filters/product-filters.component';
@@ -30,6 +32,7 @@ import { ProductoDetalleComponent } from './producto-detalle/producto-detalle.co
 import { ProductsContainerComponent } from './components/products-container/products-container.component';
 import {HomeMarcasSliderComponent} from './home-marcas-slider/home-marcas-slider.component';
 import { ProductosComponent } from './productos/productos.component';
+import { ComentarioProductoComponent } from './comentario-producto/comentario-producto.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +50,7 @@ import { ProductosComponent } from './productos/productos.component';
     SliderComponent,
     HomeMarcasSliderComponent,
     ProductosComponent,
+    ComentarioProductoComponent,
   ],
   imports: [
     BrowserModule, NgbModule, FormsModule, NgxSliderModule,

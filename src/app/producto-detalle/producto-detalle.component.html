@@ -29,14 +29,14 @@
       </div>
 
     </div>
-    <div class="col-lg-6 col-sm-12">
-      <h1>Nombre bindeado de Producto</h1>
-      <h3>$80.000</h3>
-      <p>La CREMA NOCHE BIO RESTAURADORA INTELLIGENT trabaja mientras descansas. Sus ingredientes activos se van directamente a la raíz para dar una solución eficaz y duradera.</p>
-      <button type="button" class="btn btn-primary">AÑADIR AL CARRITO</button>
+    <div class="col-lg-6 col-sm-12 info-producto">
+      <h1>{{interpolationTitle}}</h1>
+      <h3 class="mt-5" [style.color]="propertyBindingPrecio">$80.000</h3>
+      <p class="mt-5" [innerHTML]="propertyBinding">{{propertyBinding}}</p>
+      <button type="button" class="btn btn-primary mt-3" (click)="click($event)">AÑADIR AL CARRITO</button>
 
     </div>
   </div>
 </div>
-
+<app-comentario-producto></app-comentario-producto>
 
