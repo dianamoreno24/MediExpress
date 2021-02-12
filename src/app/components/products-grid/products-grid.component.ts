@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Product } from 'src/app/mock/products.mock';
 
 @Component({
-  selector: 'app-prgit initgit initoducts-grid',
+  selector: 'app-products-grid',
   templateUrl: './products-grid.component.html',
   styleUrls: ['./products-grid.component.css'],
 })

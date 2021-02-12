@@ -15,9 +15,8 @@ export class HomeMarcasSliderComponent implements OnInit {
     { path: '/assets/img/logos/logo5.png' },
     { path: '/assets/img/logos/logo6.png' },
     { path: '/assets/img/logos/logo7.png' },
-    { path: '/assets/img/logos/logo8.png' },
-  ]
-
+    { path: '/assets/img/logos/logo8.png' }
+  ];
   constructor() { }
 
   ngOnInit(): void {
