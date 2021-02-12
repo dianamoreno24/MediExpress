@@ -1,4 +1,5 @@
 export interface Product {
+  id: number;
   photoUrl: string;
   name: string;
   qty: number;
@@ -16,6 +17,7 @@ export enum CareType {
 
 const products: Product[] = [
   {
+    id: 1,
     photoUrl: '/assets/bodily_bioderma_dia.jpg',
     name: 'Atoderm',
     qty: 500,
@@ -26,6 +28,7 @@ const products: Product[] = [
     applicationTime: 'day',
   },
   {
+    id: 2,
     photoUrl: '/assets/bodily_bioderma_noche.jpg',
     name: 'Sebium',
     qty: 500,
@@ -36,6 +39,7 @@ const products: Product[] = [
     applicationTime: 'night',
   },
   {
+    id: 3,
     photoUrl: '/assets/bodily_clinique_dia.jpg',
     name: 'Crema Exfoliante Corporal',
     qty: 250,
@@ -46,6 +50,7 @@ const products: Product[] = [
     applicationTime: 'day',
   },
   {
+    id: 4,
     photoUrl: '/assets/bodily_clinique_noche.jpg',
     name: 'Loción Corporal',
     qty: 250,
@@ -56,6 +61,7 @@ const products: Product[] = [
     applicationTime: 'night',
   },
   {
+    id: 5,
     photoUrl: '/assets/bodily_loreal_dia.jpg',
     name: 'Nutrilift Firmeza',
     qty: 400,
@@ -66,6 +72,7 @@ const products: Product[] = [
     applicationTime: 'day',
   },
   {
+    id: 6,
     photoUrl: '/assets/bodily_loreal_noche.jpg',
     name: 'Exfotonic',
     qty: 350,
@@ -76,6 +83,7 @@ const products: Product[] = [
     applicationTime: 'night',
   },
   {
+    id: 7,
     photoUrl: '/assets/facial_loreal_dia.jpg',
     name: 'Crema con nutrientes Loreal',
     qty: 25,
@@ -86,6 +94,7 @@ const products: Product[] = [
     applicationTime: 'day',
   },
   {
+    id: 8,
     photoUrl: '/assets/facial_bioderma_dia.jpg',
     name: 'Crema Facial día',
     qty: 25,
@@ -96,6 +105,7 @@ const products: Product[] = [
     applicationTime: 'day',
   },
   {
+    id: 9,
     photoUrl: '/assets/facial_loreal_noche.jpg',
     name: 'Exfoliante con Aloe Vera Loreal',
     qty: 25,
@@ -106,7 +116,8 @@ const products: Product[] = [
     applicationTime: 'night',
   },
   {
-    photoUrl:'/assets/facial_bioderma_noche.jpg',
+    id: 10,
+    photoUrl: '/assets/facial_bioderma_noche.jpg',
     name: 'Crema Limpiadora Noche',
     qty: 45,
     measurementUnit: 'ml',
@@ -116,7 +127,8 @@ const products: Product[] = [
     applicationTime: 'night',
   },
   {
-    photoUrl:'/assets/facial_clinique_dia.jpg',
+    id: 11,
+    photoUrl: '/assets/facial_clinique_dia.jpg',
     name: 'Serum Rejuvenecedor',
     qty: 40,
     measurementUnit: 'ml',
@@ -126,7 +138,8 @@ const products: Product[] = [
     applicationTime: 'day',
   },
   {
-    photoUrl:'/assets/facial_clinique_noche.jpg',
+    id: 12,
+    photoUrl: '/assets/facial_clinique_noche.jpg',
     name: 'Crema facial anti-age noche',
     qty: 50,
     measurementUnit: 'ml',

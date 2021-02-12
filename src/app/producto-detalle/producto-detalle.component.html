@@ -27,14 +27,12 @@
           <span class="sr-only">Siguiente</span>
         </a>
       </div>
-
     </div>
     <div class="col-lg-6 col-sm-12 info-producto">
-      <h1>{{interpolationTitle}}</h1>
-      <h3 class="mt-5" [style.color]="propertyBindingPrecio">$80.000</h3>
+      <h1>{{product.name}}</h1>
+      <h3 class="mt-5" [style.color]="propertyBindingPrecio">{{product.price}}</h3>
       <p class="mt-5" [innerHTML]="propertyBinding">{{propertyBinding}}</p>
-      <button type="button" class="btn btn-primary mt-3" (click)="click($event)">AÑADIR AL CARRITO</button>
-
+      <button type="button" class="btn btn-primary mt-3">AÑADIR AL CARRITO</button>
     </div>
   </div>
 </div>
