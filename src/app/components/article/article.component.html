@@ -1,0 +1,18 @@
+<div *ngIf="article">
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-4 col-sm-12">
+        <div class="card" style="width: 18rem;">
+          <img src="{{article.image}}" alt="" class="img-fluid w-100">
+          <div class="card-body">
+            <p class="card-text">{{article.date}} | Comentarios: {{article.comments}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8 col-sm-12">
+        <h1 class="mb-4">{{article.name | uppercase}}</h1>
+        <p>{{article.content}}</p>
+      </div>
+    </div>
+  </div>
+</div>

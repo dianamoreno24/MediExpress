@@ -6,4 +6,5 @@ export interface Article {
     image: string;
     date: string;
     comments: number;
+    content: string;
 }
